@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="window" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,30 @@
     <link rel="stylesheet" href="./css/1-timer.css" />
   </head>
   <body>
-    <div>
-      <input type="text" id="datetime-picker" />
-      <button type="button" data-start disabled>Start</button>
-    </div>
+    <a href="./index.html">Go back</a>
 
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
+    <div class="container">
+      <div class="date-container">
+        <input class="input-field" type="text" id="datetime-picker" />
+        <button class="start-btn" type="button" data-start>Start</button>
       </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
     </div>
 
