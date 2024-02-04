@@ -59,7 +59,7 @@ flatpickr("#datetime-picker", {
     minuteIncrement: 1,
     onClose(selectedDates) {
         if (selectedDates[0] > Date.now()) {
-            userSelectedDate = selectedDates[0];
+            userSelectedDate = new Date(selectedDates[0].toISOString());
             btnStart.removeAttribute('disabled');
         } else {
             btnStart.setAttribute('disabled', true);
